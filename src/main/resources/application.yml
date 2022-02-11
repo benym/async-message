@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: asyncMessage
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/messageTest?serverTimezone=UTC
+    username: root
+    password: 12345678
+server:
+  servlet:
+    context-path: /asyncMessage
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
